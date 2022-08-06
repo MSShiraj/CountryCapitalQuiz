@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:white">
+    <div class="container" style="width:450px; height:500px; background-color:#049DBF; text-align:center; margin:100px auto; border-radius:25px; box-shadow: 5px 5px 10px #888888;">
+        <div style="padding:20px">
+            <h1 style="color:white;">Guess My Capital!!!</h1>
+        </div>
+        <div style="width:250px; height:100px; margin:auto auto; background-color:white; border-radius:25px;">
+            <h4 style="padding-top:12%; font-size:x-large; color:#049DBF;">
+                {{country1}}
+            </h4>
+        </div>
+            <div>
+                <h3 style="padding-top:12%; font-size:x-large; color:rgb(150, 255, 150);">
+                    {{resCorrect}}
+                </h3>
+                <h3 style="padding-top:0%; font-size:x-large; color:rgb(255, 40, 40);">
+                    {{resInCorrect}}
+                </h3>
+            </div>
+            <a href="{% url 'home' %}"><input type="button" value="Refresh"  style="margin:30px; height:30px; width:100px; border-radius:10px; font-size:large;" /></a>
+    </div>
+    
+    
+</body>
+</html>
