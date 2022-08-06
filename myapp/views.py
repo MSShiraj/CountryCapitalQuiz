@@ -20,10 +20,12 @@ def home(request):
 def check(request):
     print("My request",request)
     country1 = request.GET['country']
+    print("Country name", country1)
     capital1 = request.GET['capital']
     actualcapital = request.GET['actualcapital']
+    print("Country name", actualcapital)
     print("Checked")
     if capital1.lower()==actualcapital.lower():
-        return render(request,'result.html',{'country1':country1, 'resCorrect':actualcapital, 'resInCorrect':""})
+        return render(request,'result.html',{'country1':country1, 'resCorrect':"Your Answer is Correct", 'resInCorrect':""})
     else:
         return render(request,'result.html',{'country1':country1, 'resCorrect':"", 'resInCorrect':actualcapital})
