@@ -7,4 +7,4 @@ Steps to install COUNTRY CAPITAL QUIZ:
         > python manage.py runserver
 4. Now you will get into the home page that contains the name of a country and you'll have to enter
    the capital of that country in the input box provided.
-5. If your answer is correct, you'll see the capital's name in 'Green' otherwise 'Red'.
+5. If your answer is correct, you'll see the message "Your answer is correct" else you'll see a message saying "The correct answer is: Answer"
